@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			section{
+				width:600px;
+				height: 500px;
+				background: #ccc;
+				margin: 100px auto;
+				position: relative;
+			}
+			section div{
+				width: 60px;
+				height: 200px;
+				position: absolute;
+				left: 270px;
+				bottom: 30px;
+				transition: 1s;
+				text-align: center;
+				transform-origin: center bottom; 
+			}
+			section div:nth-child(7){
+				z-index: 100;
+			}
+			section div:nth-child(7) p{
+				width: 20px;
+				margin: 0 auto;
+			}
+			section:hover div:first-child{
+				transform: rotate(-90deg);
+				background: red;
+			}
+			section:hover div:nth-child(2){
+				transform: rotate(-75deg);
+				background: yellow;
+			}
+			section:hover div:nth-child(3){
+				transform: rotate(-60deg);
+				background: blue;
+			}
+			section:hover div:nth-child(4){
+				transform: rotate(-45deg);
+				background: pink;
+			}
+			section:hover div:nth-child(5){
+				transform: rotate(-30deg);
+				background: greenyellow;
+			}
+			section:hover div:nth-child(6){
+				transform: rotate(-15deg);
+				background: orange;
+			}
+			section div:nth-child(7){
+				background: goldenrod;
+			}
+			section:hover div:nth-child(8){
+				transform: rotate(15deg);
+				background: orange;
+			}
+			section:hover div:nth-child(9){
+				transform: rotate(30deg);
+				background: pink;
+			}
+			section:hover div:nth-child(10){
+				transform: rotate(45deg);
+				background: powderblue;
+			}
+			section:hover div:nth-child(11){
+				transform: rotate(60deg);
+				background: blue;
+			}
+			section:hover div:nth-child(12){
+				transform: rotate(75deg);
+				background: yellow;
+			}
+			section:hover div:nth-child(13){
+				transform: rotate(90deg);
+				background: purple;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<section>
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>昊</div>
+			<div>哥</div>
+			<div>你<p>是最棒的</p></div>
+			<div>真</div>
+			<div>牛</div>
+			<div>10</div>
+			<div>11</div>
+			<div>12</div>
+			<div>13</div>
+		</section>
+	</body>
+</html>
